@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="texto"></p>
+    <p id="texto2"></p>
+
+    <script>
+
+        var pessoa = {
+            "nome": "John",
+            "idade": 30,
+            "endereco": {
+                "cidade": "Santa Maria",
+                "estado": "Rio Grande do Sul",
+                "pais": "Brasil"
+            }
+        }
+        document.getElementById("texto").innerHTML = pessoa.endereco.estado;
+
+        //posso deletar propriedades
+        delete pessoa.endereco.estado;
+        document.getElementById("texto2").innerHTML = pessoa.endereco.estado;
+        document.getElementById("texto2").innerHTML = pessoa.endereco.cidade;
+    </script>
+</body>
+
+</html>

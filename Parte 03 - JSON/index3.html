@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="texto"></p>
+    <p id="texto2"></p>
+
+    <script>
+
+        var pessoa = {
+            "nome": "John",
+            "idade": 30,
+            "perfil": ["RH", "Financeiro", "Secretaria"]
+        }
+        document.getElementById("texto").innerHTML = pessoa.perfil[1];
+
+        var i, itens = "";
+        for (i = 0; i < pessoa.perfil.length; i++) {
+            itens += pessoa.perfil[i] + "<br>";
+        }
+
+        document.getElementById("texto2").innerHTML = itens;
+
+
+        var pessoa = {
+            "nome": "John",
+            "idade": 30,
+            "perfil": [
+                { "setor": "RH", "ativo": true },
+                { "setor": "Financeiro", "ativo": false },
+                { "setor": "Secretaria", "ativo": true }
+            ]
+        }
+
+        var j, x, dados = "";
+        for (j in pessoa.perfil) {
+            dados += "<b>" + pessoa.perfil[j].setor + "</b>" + "<br>";
+            dados += pessoa.perfil[j].ativo + "<br>";
+        }
+
+        document.getElementById("texto2").innerHTML = dados;
+
+    </script>
+</body>
+
+</html>

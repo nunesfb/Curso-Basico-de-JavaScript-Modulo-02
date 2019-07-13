@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="propaganda">
+    </div>
+
+    <button id="botao">Pressione</button>
+
+    <button id="botao2">Teste</button>
+
+    <script>
+        document.getElementById("botao").addEventListener("click", Clique);
+
+        var botao2 = document.getElementById("botao2");
+        botao2.addEventListener("click", Clique);
+        botao2.addEventListener("click", NovaMsg);
+
+        function Clique() {
+            alert("Escutei seu clique e enviei uma mensagem!");
+        }
+
+        function NovaMsg() {
+            alert("Enviei mais uma nova mensagem!");
+        }
+
+    </script>
+</body>
+
+</html>

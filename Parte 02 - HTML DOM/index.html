@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <span id="primeiro"></span>
+
+    <p id="trecho1"></p>
+
+    <span id="segundo"></span>
+
+    <p class="noticia"></p>
+
+    <div class="noticia"></div>
+
+    <script>
+        // DOM - Sao acoes que podem ser executadas em elementos HTML
+        //getElementById = metodo
+        //innerHTML = propriedade
+
+        document.getElementById("trecho1").innerHTML = "Estamos buscando um elemento por seu id";
+
+        var tags = document.getElementsByTagName("span");
+        console.log(tags);
+
+        var tags = document.getElementsByTagName("span")[1];
+        console.log(tags);
+
+        var classes = document.getElementsByClassName("noticia");
+        console.log(classes);
+
+        var classes = document.getElementsByClassName("noticia")[1];
+        console.log(classes);
+
+    </script>
+</body>
+
+</html>

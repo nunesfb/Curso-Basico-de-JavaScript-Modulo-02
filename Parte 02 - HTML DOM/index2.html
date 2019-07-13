@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="noticia">
+        <p id="frase"></p>
+        <span id="texto1"></span>
+    </div>
+
+    <div>
+        <span id="texto2"></span>
+        <input id="cadastrar">
+    </div>
+
+    <p id="form">Texto em azul</p>
+
+    <button id="cor" onclick="TrocaCor()">Cor</button>
+
+    <button id="texto" onmouseover="TrocaCorTexto()" onmouseout="VoltaCorTexto()">Texto</button>
+
+    <script>
+        var noticia = document.querySelector('body div#noticia');
+        console.log("Elemento selecionado: " + noticia);
+
+        var frase = document.querySelector('body div#noticia p#frase');
+        console.log("Elemento selecionado: " + frase);
+
+        var spans = document.querySelectorAll('span');
+        console.log(spans);
+
+        var span = document.querySelector('span[id=texto2]');
+        console.log(span);
+
+        document.getElementById("cadastrar").value = "enviar";
+
+        document.getElementById("form").style.color = "blue";
+
+        function TrocaCor() {
+            document.getElementById("cor").style.color = "blue";
+        }
+
+        function TrocaCorTexto() {
+            document.getElementById("texto").style.color = "red";
+        }
+
+        function VoltaCorTexto() {
+            document.getElementById("texto").style.color = "black";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="texto"></p>
+
+    <p id="texto2"></p>
+
+    <script>
+        //JSON
+        //JavaScript Object Notation
+        //Permite que você salve e troca dados entre sistemas usando um padrao (JSON)
+        //Pode ser os seguintes formatos: string, numero, objeto JSON, array, booleano, null
+        //Tambem pode ser usado junto destes, os formatos function, data e undefined
+        //A extensão do arquivo é .json
+
+        /*
+        Exemplo de JSON
+        {
+            "pessoa":{ "nome":"Felipe", "idade":29, "cargo":"Professor" }
+        }
+
+        Exemplo de Array em JSON
+        {
+            "pessoa":[
+                { "nome":"Felipe", "idade":29, "cargo":"Professor" },
+                { "nome":"Joao", "idade":45, "cargo":"Analista" },
+                { "nome":"Maria", "idade":18, "cargo":"Desenvolvedor" }
+            ]
+        }
+        */
+
+        var pessoa = '{"nome":"Felipe", "idade":29, "cargo":"Professor"}';
+        //transformamos de string para JavaScript object (Parse)
+        var objeto = JSON.parse(pessoa);
+        document.getElementById("texto").innerHTML = objeto.nome;
+
+        //Stringify
+        //Convertemos um JavaScript object para string com esse metodo
+        var objeto = { nome: "Felipe", idade: 29, cargo: "Professor" };
+        var pessoa = JSON.stringify(objeto);
+        document.getElementById("texto2").innerHTML = pessoa;
+
+
+    </script>
+</body>
+
+</html>

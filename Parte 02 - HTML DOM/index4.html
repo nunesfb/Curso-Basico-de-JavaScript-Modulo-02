@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="criar" onclick="CriaLink()">Criar</button>
+
+    <button id="remover" onclick="RemoveLink()">Remover</button>
+
+    <div id="propaganda">
+
+    </div>
+
+    <script>
+
+        function CriaLink() {
+            //cria um elemento com uma tag a (link)
+            var linkElement = document.createElement('a');
+
+            //vamos setar os valores para os atributos
+            linkElement.setAttribute('href', 'http://www.google.com.br');
+            //adicionar mais elementos
+            linkElement.setAttribute('title', 'Site da Google');
+            linkElement.setAttribute('target', '_blank');
+
+            //vamos incluir um texto no link, criamos um elemento para o texto
+            var textElement = document.createTextNode('Acessar site do Google');
+
+            //agora precisamos posicionar dentro desse elemento com o link
+            linkElement.appendChild(textElement);
+
+            //criar um elemento
+            var elemento = document.querySelector('#propaganda');
+            //jogar o link dentro do corpo do elemento
+            elemento.appendChild(linkElement);
+        }
+
+        function RemoveLink() {
+            //posso remover o elemento
+            var elemento = document.querySelector('a');
+            elemento.remove(elemento);
+        }
+
+    </script>
+
+</body>
+
+</html>
