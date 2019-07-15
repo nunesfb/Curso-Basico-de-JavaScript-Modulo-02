@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="criar" onclick="CriaTexto()">Criar</button>
+
+    <button id="remover" onclick="RemoveTexto()">Remover</button>
+
+    <div id="textos">
+
+    </div>
+
+    <script>
+
+        function CriaTexto() {
+            var paragrafo = document.createElement('h3');
+
+            paragrafo.setAttribute('title', 'texto');
+
+            var texto = document.createTextNode('Novo texto');
+
+            paragrafo.appendChild(texto);
+
+            var textos = document.querySelector('#textos');
+            textos.appendChild(paragrafo);
+        }
+
+        function RemoveTexto() {
+            var elemento = document.querySelector('h3');
+            elemento.remove(elemento);
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -11,11 +11,12 @@
 <body>
     <p id="texto"></p>
     <p id="texto2"></p>
+	<p id="texto3"></p>
 
     <script>
 
         var pessoa = {
-            "nome": "John",
+            "nome": "Felipe",
             "idade": 30,
             "endereco": {
                 "cidade": "Santa Maria",
@@ -28,7 +29,7 @@
         //posso deletar propriedades
         delete pessoa.endereco.estado;
         document.getElementById("texto2").innerHTML = pessoa.endereco.estado;
-        document.getElementById("texto2").innerHTML = pessoa.endereco.cidade;
+        document.getElementById("texto3").innerHTML = pessoa.endereco.cidade;
     </script>
 </body>
 

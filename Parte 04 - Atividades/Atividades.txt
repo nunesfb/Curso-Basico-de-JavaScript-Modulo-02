@@ -1,0 +1,7 @@
+1) Crie um função que receba como parâmetro os seguintes dados de um produto: nome, descricao, quantidade e valor. Crie um objeto chamado produto e armazene os valores dos parâmetros nas propriedades deste objeto. Imprima separadamente cada propriedade no console do navegador. Adicione depois disto uma nova propriedade chamada data de validade. Imprima todos os dados do objeto de forma única.
+
+2) Crie uma div no HTML que tenha dentro dela 3 parágrafos, todos pertencentes à classe "posts". Busque por todos parágrafos que estejam associados a esta classe, armazene o resultado em uma variável e imprima no console do navegador. Imprima também somente o terceiro parágrafo. 
+
+3) Crie uma função chamada CriaTexto, que vai ser executada quando clicar em um botão. Essa função deve criar por meio do JavaScript, um elemento html com a tag "h3". Deve ser associado ao elemento, um texto qualquer. Crie também um função para remover os elementos com tag h3 que foram criados, sendo disparada quando clicar em outro botão.
+
+4) Crie um objeto que contenha as seguintes propriedades: nome, valor e caracteristicas com suas propriedades (peso e cor). Armazene em uma varíavel e depois use a função stringify. Imprima o resultado dentro de um parágrafo, que é selecionado por seu id e usando innerHTML.
