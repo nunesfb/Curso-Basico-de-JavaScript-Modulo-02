@@ -34,7 +34,7 @@
 
 ## 📝 Licença
 
-- Este projeto tem linceça MIT. 
+- Este projeto tem licença MIT. 
 
 ---
 
