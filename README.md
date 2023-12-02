@@ -1,39 +1,42 @@
+<p align="center">
+  <img alt="LogoTecEdu4All" src="https://yt3.googleusercontent.com/dmw2l1Yz24lOBeG175P6ovEnNdNI3zNVoMiUMRNyqE8o_ECDsvU1ttPNRWCB_VAXZlOcLKsiYKQ=s176-c-k-c0x00ffffff-no-rj" width="120px" />
+</p>
+
 <h1 align="center">
-  <img alt="LogoTecEdu4All" src="http://materiaisaulas.tecedu4all.com.br/canal/logo.png" width="120px" />
+  Curso Básico de JavaScript
 </h1>
 
-<h3 align="center">
-  Curso Básico de JavaScript - Módulo 02
-</h3>
+<p align="justify">Bem-vindo ao nosso curso abrangente de JavaScript, projetado para transformar iniciantes em desenvolvedores confiantes e capacitados. Prepare-se para uma jornada emocionante através dos fundamentos e conceitos avançados desta linguagem de programação essencial.</p> 
 
-<p align="center">Curso introdutório para quem está iniciando os estudos em programação com JavaScript (Módulo 02)</p> 
-<p align="center">Estes códigos pertencem à playlist de vídeos do canal TecEdu4All no YouTube</p> 
+<p align="justify">Estes códigos pertencem à playlist do canal do YouTube TecEdu4All. </p> 
 
+<p align="justify">Se gostou do repositório, deixe sua estrela ⭐ </p> 
+
+<br/>
 
 ## 👨🏼‍💻 Professor
 
-- [Felipe Becker Nunes](https://github.com/nunesfb)
+- [Felipe Becker Nunes](https://www.linkedin.com/in/felipe-becker-nunes-b561a576/)
 
-## 💻 Playlist
+## 💻 Playlist/Vídeo
 
-- [Curso Básico de JavaScript - Módulo 02](https://www.youtube.com/playlist?list=PL2hDwB8DzXGOZtggpA2kPM7lkQm3N2zEk)
+- [Curso Básico de JavaScript](https://www.youtube.com/playlist?list=PL2hDwB8DzXGOU70un1CzAmbchSJI6jfUy)
 
 ## ✋🏻 Pré-requisitos
 
 - [Node.js](https://nodejs.org/en/)
-- [Yarn](https://classic.yarnpkg.com/lang/en/)
 
-## 🔥 Instalação e execução
+## 🔥 Instruções de Instalação e Execução
 
-1. Faça um clone desse repositório;
-2. Entre em uma das pastas do repositório, por exemplo, `cd Parte 01 - Objetos`;
-3. Rode `yarn` dentro da pasta para instalar as dependências ;
+1. Clone esse repositório.
+2. Rode este comando: **npm i**.
+3. Rode este comando: **npm run dev**.
 
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT. 
+- Este projeto tem linceça MIT. 
 
 ---
 
-[Se inscreva no canal para ver os vídeos deste código e muito mais!](https://www.youtube.com/channel/UClIDejJoLMKCfXKEyi5ZTWQ)
+[Inscreva-se no canal para ver estes vídeos e muito mais!](https://www.youtube.com/channel/UClIDejJoLMKCfXKEyi5ZTWQ)
 
